@@ -1,23 +1,24 @@
 
 module.exports = {
-  plugins: ["@typescript-eslint"],
-  parser: "vue-eslint-parser",
-  parserOptions: {
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
     "parser": "@typescript-eslint/parser"
   },
-  globals: {
-    document: "readonly",
-    navigator: "readonly",
-    window: "readonly"
+  "globals": {
+    "document": "readonly",
+    "navigator": "readonly",
+    "window": "readonly"
   },
-  "extends": [
-    "@vue/typescript/recommended",
-    "eslint:recommended",
-    "plugin:vue/vue3-recommended",
-    "prettier"
-  ],
-  rules: {},
-  settings: {
+  "extends": ["plugin:@typescript-eslint/recommended", "eslint:recommended", "plugin:vue/vue3-recommended", "prettier"],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": "warn"
+  },
+  "settings": {
     "import/parsers": {
       "@typescript-eslint/parser": [".ts", ".tsx"]
     },
@@ -26,3 +27,4 @@ module.exports = {
     }
   }
 }
+
