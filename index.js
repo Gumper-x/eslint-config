@@ -19,7 +19,7 @@ module.exports = {
     "plugin:vue/vue3-recommended",
     "prettier"
   ],
-  "plugins": ["@typescript-eslint", "eslint-plugin-import", "eslint-plugin-promise", "prettier"],
+  "plugins": ["@typescript-eslint", "eslint-plugin-promise", "prettier"],
   "rules": {
     "prettier/prettier": "warn",
     "no-extra-semi": "error",
@@ -31,17 +31,6 @@ module.exports = {
     "no-var": "error",
     "prefer-const": "error",
     yoda: "error",
-    // eslint-plugin-import
-    "import/extensions": [
-      "warn",
-      "never",
-      {
-        vue: "always",
-        css: "always",
-        scss: "always",
-        json: "always",
-      },
-    ],
     // eslint-plugin-vue
     "vue/no-unused-components": "warn",
     "vue/component-name-in-template-casing": ["error", "PascalCase"],
