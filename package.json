@@ -1,10 +1,10 @@
 {
   "name": "@gumper-x/eslint-config",
   "version": "1.1.0",
-  "description": "",
+  "description": "Eslint Config",
   "main": "index.js",
-  "author": "",
-  "license": "ISC",
+  "author": "Gumper-x",
+  "license": "MIT",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "5.27.0",
     "@typescript-eslint/parser": "5.27.0",
@@ -17,5 +17,13 @@
   },
   "peerDependencies": {
     "eslint": "^8.0.1"
-  }
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "bugs": {
+    "url": "https://github.com/Gumper-x/eslint-config/issues"
+  },
+  "homepage": "https://github.com/Gumper-x/eslint-config#readme"
 }
