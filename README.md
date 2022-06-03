@@ -8,7 +8,7 @@ That basic eslint config for Vue 3 projects
 npm i @gumper-x/eslint-config -D
 ```
 Use in `.eslintrc`
-```json
+```js
 {
   "extends": ["@gumper-x"],
   "rules": {
