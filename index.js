@@ -1,4 +1,3 @@
-
 module.exports = {
   "root": true,
   "env": {
@@ -48,8 +47,18 @@ module.exports = {
     "promise/prefer-await-to-then": "warn",
     "promise/always-return": "error",
     // @typescript-eslint
-    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        ignoreRestSiblings: true,
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+      },
+    ],
     "no-restricted-imports": ["error", "@apollo/client"],
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+    "@typescript-eslint/explicit-module-boundary-types": "error",
+    "@typescript-eslint/array-type": ["error", "array"]
   },
   "settings": {
     "import/parsers": {
