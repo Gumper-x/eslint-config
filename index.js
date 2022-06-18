@@ -1,4 +1,3 @@
-
 module.exports = {
   "root": true,
   "env": {
@@ -23,15 +22,51 @@ module.exports = {
   "rules": {
     "prettier/prettier": "warn",
     "no-extra-semi": "error",
-    curly: "error",
+    "curly": "error",
     "no-else-return": "error",
     "default-param-last": "error",
     "no-lone-blocks": "error",
     "no-unused-vars": "off",
     "no-var": "error",
     "prefer-const": "error",
-    yoda: "error",
+    "yoda": "error",
+    "no-eq-null": "error",
+    "require-await": "error",
     // eslint-plugin-vue
+    "vue/block-lang": ["error",
+      {
+        "script": {
+          "lang": "ts"
+        }
+      }
+    ],
+    "vue/custom-event-name-casing": ["error", "camelCase"],
+    "vue/define-macros-order": ["error", {
+      "order": ["defineProps", "defineEmits"]
+    }],
+    "vue/html-button-has-type": ["error", {
+      "button": true,
+      "submit": true,
+      "reset": true
+    }],
+    "vue/next-tick-style": ["error", "promise"],
+    "vue/match-component-import-name": ["error"],
+    "vue/no-boolean-default": ["error", "default-false"],
+    "vue/no-duplicate-attr-inheritance": ["error"],
+    "vue/no-empty-component-block": ["error"],
+    "vue/no-template-target-blank": ["error", {
+      "allowReferrer": false,
+      "enforceDynamicLinks": "always"
+    }],
+    "vue/no-useless-v-bind": ["error", {
+      "ignoreIncludesComment": false,
+      "ignoreStringEscape": false
+    }],
+    "vue/no-v-text": ["error"],
+    "vue/no-unused-refs": ["error"],
+    "vue/padding-line-between-blocks": ["error", "always"],
+    "vue/require-expose": ["error"],
+    "vue/v-for-delimiter-style": ["error"],
     "vue/no-unused-components": "warn",
     "vue/component-name-in-template-casing": ["error", "PascalCase"],
     "vue/no-boolean-default": ["error", "default-false"],
@@ -48,8 +83,18 @@ module.exports = {
     "promise/prefer-await-to-then": "warn",
     "promise/always-return": "error",
     // @typescript-eslint
-    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        ignoreRestSiblings: true,
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+      },
+    ],
     "no-restricted-imports": ["error", "@apollo/client"],
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+    "@typescript-eslint/explicit-module-boundary-types": "error",
+    "@typescript-eslint/array-type": ["error", "array"]
   },
   "settings": {
     "import/parsers": {
