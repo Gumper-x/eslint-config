@@ -22,14 +22,16 @@ module.exports = {
   "rules": {
     "prettier/prettier": "warn",
     "no-extra-semi": "error",
-    curly: "error",
+    "curly": "error",
     "no-else-return": "error",
     "default-param-last": "error",
     "no-lone-blocks": "error",
     "no-unused-vars": "off",
     "no-var": "error",
     "prefer-const": "error",
-    yoda: "error",
+    "yoda": "error",
+    "no-eq-null": "error",
+    "require-await": "error",
     // eslint-plugin-vue
     "vue/block-lang": ["error",
       {
