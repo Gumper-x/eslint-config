@@ -31,6 +31,40 @@ module.exports = {
     "prefer-const": "error",
     yoda: "error",
     // eslint-plugin-vue
+    "vue/block-lang": ["error",
+      {
+        "script": {
+          "lang": "ts"
+        }
+      }
+    ],
+    "vue/custom-event-name-casing": ["error", "camelCase"],
+    "vue/define-macros-order": ["error", {
+      "order": ["defineProps", "defineEmits"]
+    }],
+    "vue/html-button-has-type": ["error", {
+      "button": true,
+      "submit": true,
+      "reset": true
+    }],
+    "vue/next-tick-style": ["error", "promise"],
+    "vue/match-component-import-name": ["error"],
+    "vue/no-boolean-default": ["error", "default-false"],
+    "vue/no-duplicate-attr-inheritance": ["error"],
+    "vue/no-empty-component-block": ["error"],
+    "vue/no-template-target-blank": ["error", {
+      "allowReferrer": false,
+      "enforceDynamicLinks": "always"
+    }],
+    "vue/no-useless-v-bind": ["error", {
+      "ignoreIncludesComment": false,
+      "ignoreStringEscape": false
+    }],
+    "vue/no-v-text": ["error"],
+    "vue/no-unused-refs": ["error"],
+    "vue/padding-line-between-blocks": ["error", "always"],
+    "vue/require-expose": ["error"],
+    "vue/v-for-delimiter-style": ["error"],
     "vue/no-unused-components": "warn",
     "vue/component-name-in-template-casing": ["error", "PascalCase"],
     "vue/no-boolean-default": ["error", "default-false"],
