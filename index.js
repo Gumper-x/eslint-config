@@ -30,6 +30,9 @@ module.exports = {
     "no-var": "error",
     "prefer-const": "error",
     yoda: "error",
+    "default-case": "error",
+    "default-case-last": "error",
+    "no-implicit-coercion": "error",
     // eslint-plugin-vue
     "vue/multi-word-component-names": "off",
     "vue/block-lang": ["error",
