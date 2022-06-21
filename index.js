@@ -31,12 +31,13 @@ module.exports = {
     "prefer-const": "error",
     yoda: "error",
     // eslint-plugin-vue
+    "vue/multi-word-component-names": "off",
     "vue/block-lang": ["error",
-      {
-        "script": {
-          "lang": "ts"
-        }
+    {
+      "script": {
+        "lang": "ts"
       }
+    }
     ],
     "vue/custom-event-name-casing": ["error", "camelCase"],
     "vue/define-macros-order": ["error", {
