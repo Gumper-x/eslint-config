@@ -22,16 +22,14 @@ module.exports = {
   "rules": {
     "prettier/prettier": "warn",
     "no-extra-semi": "error",
-    "curly": "error",
+    curly: "error",
     "no-else-return": "error",
     "default-param-last": "error",
     "no-lone-blocks": "error",
     "no-unused-vars": "off",
     "no-var": "error",
     "prefer-const": "error",
-    "yoda": "error",
-    "no-eq-null": "error",
-    "require-await": "error",
+    yoda: "error",
     // eslint-plugin-vue
     "vue/block-lang": ["error",
       {
@@ -69,7 +67,9 @@ module.exports = {
     "vue/v-for-delimiter-style": ["error"],
     "vue/no-unused-components": "warn",
     "vue/component-name-in-template-casing": ["error", "PascalCase"],
+    "vue/no-boolean-default": ["error", "default-false"],
     "vue/v-on-function-call": ["error", "never"],
+    "vue/padding-line-between-blocks": ["error", "always"],
     "vue/no-unused-vars": "warn",
     // eslint-plugin-promise
     "promise/no-return-wrap": "error",
@@ -92,7 +92,6 @@ module.exports = {
     "no-restricted-imports": ["error", "@apollo/client"],
     "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     "@typescript-eslint/explicit-module-boundary-types": "error",
-    "@typescript-eslint/array-type": ["error", "array"]
   },
   "settings": {
     "import/parsers": {
