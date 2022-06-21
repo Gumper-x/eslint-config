@@ -69,9 +69,7 @@ module.exports = {
     "vue/v-for-delimiter-style": ["error"],
     "vue/no-unused-components": "warn",
     "vue/component-name-in-template-casing": ["error", "PascalCase"],
-    "vue/no-boolean-default": ["error", "default-false"],
     "vue/v-on-function-call": ["error", "never"],
-    "vue/padding-line-between-blocks": ["error", "always"],
     "vue/no-unused-vars": "warn",
     // eslint-plugin-promise
     "promise/no-return-wrap": "error",
@@ -105,4 +103,3 @@ module.exports = {
     }
   }
 }
-
