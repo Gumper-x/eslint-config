@@ -96,7 +96,7 @@ module.exports = {
     "no-restricted-imports": ["error", "@apollo/client"],
     "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     "@typescript-eslint/explicit-module-boundary-types": "error",
-    "@typescript-eslint/no-unnecessary-boolean-literal-compar": "error"
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error"
   },
   "settings": {
     "import/parsers": {
