@@ -1,6 +1,6 @@
 {
   "name": "@gumper-x/eslint-config",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "Eslint Config",
   "main": "index.js",
   "author": "Gumper-x",
